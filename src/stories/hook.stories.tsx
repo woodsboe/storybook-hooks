@@ -3,10 +3,6 @@ import { GenerateGuidProps, useGenerateGuid } from "./hooks/useGenerateGuid";
 import React from "react";
 
 const HookStory = (args: GenerateGuidProps) => {
-  return <HookStoryWithProps {...args} />;
-};
-
-const HookStoryWithProps = (args: GenerateGuidProps) => {
   const guid = useGenerateGuid(args);
   return <>{guid}</>;
 };
