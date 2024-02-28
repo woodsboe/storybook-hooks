@@ -2,6 +2,6 @@ export function Tag({tagName}: TagProps) {
   return (<div>{tagName}</div>)
 }
 
-interface TagProps {
+export interface TagProps {
   tagName: string;
 }
